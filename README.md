@@ -1,18 +1,6 @@
-<<<<<<< HEAD
-=======
-<div id="top"></div>
-
-
-
->>>>>>> a168b4518d2414002b67196c1b2efe4dc7544f6e
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-
-<<<<<<< HEAD
-=======
-<!-- Acerca del proyecto -->
->>>>>>> a168b4518d2414002b67196c1b2efe4dc7544f6e
 ##Acerca del proyecto
 
 ShopsRUs es una tienda minorista existente. Quieren ofrecer descuentos a sus clientes en todas sus plataformas web / móviles. Requieren la construcción de un conjunto de API que brinden capacidades para calcular descuentos, generar los costos totales y generar las facturas para los clientes.
@@ -162,17 +150,10 @@ Ejemplo:
 ```
 * **api/tipoproductos/{id} **- DELETE - Elimina el tipo producto con ese ID.
 
-<<<<<<< HEAD
 **Producto**:
 
 * **api/productos **- GET - Obtiene una lista de todos los productos
 * **api/productos/{id} **- GET - Obtiene el tipo producto con ese ID.
-=======
-**Productos**:
-
-* **api/productos **- GET - Obtiene una lista de todos los productos
-* **api/productos/{id} **- GET - Obtiene el producto con ese ID.
->>>>>>> a168b4518d2414002b67196c1b2efe4dc7544f6e
 * **api/productos/create **- POST - Crea un producto con el body.
 Ejemplo:
 ```json
@@ -193,117 +174,10 @@ Ejemplo:
     "precio": 51.23
 }
 ```
-<<<<<<< HEAD
 * **api/productos/{id} **- DELETE - Elimina el tipo producto con ese ID.
 
 
 
-=======
-* **api/productos/{id} **- DELETE - Elimina el producto con ese ID.
-
-**Clientes**:
-
-* **api/clientes **- GET - Obtiene una lista de todos los clientes
-* **api/clientes/{id} **- GET - Obtiene el cliente con ese ID.
-* **api/clientes/create **- POST - Crea un cliente con el body.
-Ejemplo:
-```json
-{
-    "tipoclienteid": 2,
-    "nombres": "Daniel Marino",
-    "apellidos": "Marte Sorano",
-    "fechanacimiento": "2002-06-03T23:47:03.390Z"
-}
-```
-* **api/clientes/{id} **- PUT - modifica un cliente con el body.
-Ejemplo:
-```json
-{
-    "tipoclienteid": 2,
-    "nombres": "Daniel Marino",
-    "apellidos": "Marte Sorano",
-    "fechanacimiento": "2002-06-03T23:47:03.390Z"
-}
-```
-* **api/clientes/{id} **- DELETE - Elimina el cliente con ese ID.
-
-**Facturas**:
-
-* **api/facturas **- GET - Obtiene una lista de todas las facturas
-* **api/facturas/{id} **- GET - Obtiene la factura con ese ID.
-* **api/facturas/create **- POST - Crea una factura con el body.
-Ejemplo:
-```json
-{
-    "clienteid": 1,
-    "productos": [1,2]
-}
-```
-* **api/facturas/{id} **- DELETE - Elimina la factura con ese ID.
-
-**Descuentos**:
-
-* **api/descuentos **- GET - Obtiene una lista de todos los descuentos
-* **api/descuentos/{id} **- GET - Obtiene el descuento con ese ID.
-* **api/descuentos/create **- POST - Crea un descuento con el body.
-Ejemplo:
-```json
-{
-    "nombre":  "30% por fidelidad",
-    "tipo": "Porcentual",
-    "valor": 30,
-    "reglas": [
-        {
-            "id": 6,
-            "criterio": ">=|2"
-        }
-    ]
-}
-```
-
-* **api/descuentos/{id} **- PUT - modifica un descuento con el body.
-Ejemplo:
-```json
-{
-    "nombre":  "30% por fidelidad",
-    "tipo": "Porcentual",
-    "valor": 30
-}
-```
-* **api/descuentos/{id} **- DELETE - Elimina el descuento con ese ID.
-
-* **api/descuentos/{id}/addrules **- POST - Agrega reglas al descuento de ese id desde el body.
-Ejemplo:
-```json
-{
-    "reglas": [
-        {
-            "id": 6,
-            "criterio": ">=|2"
-        },
-		{
-            "id": 5,
-            "criterio": ">=|21"
-        }
-    ]
-}
-```
-
-* **api/descuentos/{id}/removerules **- POST - elimina reglas al descuento de ese id desde el body. (OJO, ESTOS IDs no son de las reglas, son el id que le pertenece a la tabla regladescuento)
-Ejemplo:
-```json
-{
-    "reglas": [
-        {
-            "id": 1
-        },
-		{
-            "id": 2
-        }
-    ]
-}
-```
->>>>>>> a168b4518d2414002b67196c1b2efe4dc7544f6e
 
 <p align="right">(<a href="#top">Volver</a>)</p>
 
